@@ -1,0 +1,54 @@
+
+package com.senai.conversor.services;
+
+import com.senai.conversor.dtos.*;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ConversorService {
+
+
+    public ResultadoConversorDto converterTemperatura(ConversorDto dados){
+
+
+
+        return new ResultadoConversorDto();
+
+    }
+
+    public ResultadoConversorDto converterMassa(ConversorDto dados){
+
+        return new ResultadoConversorDto();
+
+    }
+
+    public ResultadoConversorDto converterComprimento(ConversorDto dados){
+
+        ResultadoConversorDto retorno = new ResultadoConversorDto();
+
+        retorno.setUnidadeDestino(dados.getUnidadeDestino());
+
+        if ( dados.getUnidadeOrigem().equalsIgnoreCase("M")){
+            //-- criar calculo para converter centrimetro para metros
+
+            retorno.setValor(dados.getValor() * 100);
+
+        } else if( dados.getUnidadeOrigem().equalsIgnoreCase("CM") ){
+            //-- criar calculo para converter metros para centimetros
+
+            retorno.setValor(dados.getValor() / 100);
+
+        } else {
+            //--ERRO
+        }
+
+        return retorno;
+
+    }
+
+    public ResultadoConversorDto converterVolume(ConversorDto dados){
+
+        return new ResultadoConversorDto();
+
+    }
+}
