@@ -1,0 +1,10 @@
+com\senai\controleestoque\controllers\EstoqueController.class
+com\senai\controleestoque\models\EstoqueModel.class
+com\senai\controleestoque\dtos\ProdutoDTO.class
+com\senai\controleestoque\services\ProdutoService.class
+com\senai\controleestoque\controllers\ProdutoController.class
+com\senai\controleestoque\dtos\ControleDTO.class
+com\senai\controleestoque\dtos\ResultadoDTO.class
+com\senai\controleestoque\ControleestoqueApplication.class
+com\senai\controleestoque\models\ProdutoModel.class
+com\senai\controleestoque\services\EstoqueService.class
